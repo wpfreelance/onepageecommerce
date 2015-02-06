@@ -33,11 +33,13 @@ video {
 }
 /*  Typography
 ---------------------*/
-h1, h2, h3, h4, p {
-	font-family: 'Josefin Slab', serif;
-}
-a {
+h1, h2, h3, h4, a {
+	
 	font-family: 'Quicksand', sans-serif;
+	transition: all 0.3s ease 0s;
+}
+p {
+	font-family: 'Josefin Slab', serif;
 }
 /*  Navigation
 ---------------------*/
@@ -74,8 +76,7 @@ nav {
 --------------------*/
 
 #howtouse {
-	background: url(../img/nav.jpg);
-	background-size: cover;
+	background: url(../img/blurbg.png);
 	background-attachment: fixed;
 }
 /*  Buttons
@@ -110,6 +111,21 @@ nav {
 	color: #F04D79;
 	text-decoration: none;
 }
+
+.addtocart {
+   padding: 10px 15px;
+   border: 2px solid #fff;
+   border-radius: 5px;
+   background:#fff;
+   color: #F04D79 !important;
+
+}
+.addtocart:hover {
+    background:none repeat scroll 0 0 transparent;
+    text-decoration: none;
+    color: #fff !important;
+}
+
 /*  Divider 
 -----------------*/
 
@@ -294,14 +310,21 @@ textarea {
 }
 /* Text styling */
 .cbp-so-section h2 {
-	font-size: 4.5em;
+	font-size: 3.9em;
 	font-weight: 300;
 	line-height: 1;
 }
 .cbp-so-section p {
-	font-size: 2em;
+	font-size: 1.9em;
 	font-weight: 300;
 }
+
+.cbp-so-side.cbp-so-side-left.col-md-6.small_p > p {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    color: #000000;
+    padding: 10px;
+}
+
 .small_p p {
 	font-size: 1.4em;
 }
@@ -349,21 +372,14 @@ textarea {
 	-moz-transform: translateX(80px);
 	transform: translateX(80px);
 }
-/* Animated state */
-/* add you final states (transition) or your effects (animations) for each side */
+
 .cbp-so-section.cbp-so-animate .cbp-so-side-left, .cbp-so-section.cbp-so-animate .cbp-so-side-right {
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
 	opacity: 1;
 }
-/* For example, add a delay for the right side:
-.cbp-so-section.cbp-so-animate .cbp-so-side-right {
-	-webkit-transition-delay: 0.2s;
-	-moz-transition-delay: 0.2s;
-	transition-delay: 0.2s;
-}
-*/
+
 
 
 .cbp-so-side.cbp-so-side-right.col-md-6 > h2 {
@@ -517,9 +533,22 @@ button {
 	margin: 0 auto;
 	font-size: 0.8em;
 }
-/* Individual modal styles with animations/transitions */
 
-/* Effect 1: Fade in and scale up */
+
+#modal-2 a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+#modal-2 { 
+    text-align: center;
+}
+#modal-2 img {
+    margin: 0 auto;
+    width: 65%;
+}
+
+
 .md-effect-1 .md-content {
 	-webkit-transform: scale(0.7);
 	-moz-transform: scale(0.7);
